@@ -1,0 +1,1 @@
+select ds, job_id, row_number() over (partition by ds order by job_id) from job_data 
